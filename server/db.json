@@ -1,0 +1,155 @@
+{
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$5tPwoMBieQODjUHY6Mgn3ueghs57veYRk5HcYV94gZPa1GgPyrt0i",
+      "name": "Admin",
+      "avatar": "https://avatars.githubusercontent.com/u/72383649?v=4",
+      "id": 1
+    },
+    {
+      "email": "user@gmail.com",
+      "password": "$2a$10$NKG6/c0sTA6pkSSURPdjguesJsybhd81jPJ7xw/vDuNLYRvitw7yO",
+      "avatar": "https://scontent.fdac5-1.fna.fbcdn.net/v/t39.30808-6/299684131_1512367125865634_4824945952595178994_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5b7eaf&_nc_ohc=V3Eku-1OFeUAX-FPla1&tn=UuboEzHRJ1CyHg37&_nc_ht=scontent.fdac5-1.fna&oh=00_AT9y9CKeMLeyadK9D-qcUI6OthDHlAv18VR9IGnysDYMuw&oe=6337E3E0",
+      "name": "User",
+      "id": 2
+    },
+    {
+      "email": "manager@gmail.com",
+      "password": "$2a$10$9hsHwQa7QeTZrfPuanxPM.5Nd6P6wquY1VWIjpm5Zn8NEMGUCh1La",
+      "name": "Manager",
+      "avatar": "https://scontent.fjsr12-1.fna.fbcdn.net/v/t39.30808-6/271831000_1369640346804980_3506216716705261954_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=t41I7TGH4D4AX8LWwDE&_nc_ht=scontent.fjsr12-1.fna&oh=00_AT_MN1szQRD5g1aZ8CRvjOKXWzAMONOR6UNXtOYFS2d4kA&oe=63339256",
+      "id": 3
+    },
+    {
+      "email": "guest@gmail.com",
+      "password": "$2a$10$0ggx1ssnYfnNIcBGH5QiheImt3l/UxikJVsm89F/9u7bt3J0R2sxi",
+      "name": "Guest",
+      "avatar": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolJxYXITEhJSkvLi4uFx8zODMsNygtLysBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEBAQEBAQEBAAAAAAAAAAAAAQUEAwIGB//EADQQAQACAAMGAwUIAgMAAAAAAAABAgMFEQQhMUFRYRJxkSIygaGxEyMzQlJy0eGC8BViwf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD+4AAAAAAAAAAAgKAAAAAAAAAAAAAAAAAAACKAAICggKIoAPm94rGtpiI7zoD6HFiZlhxw1t5RpHzeFs1nlSPjbUGoMn/lbfor6y9cPNKz71ZjvE6g0R54WNS8a1tE/WPg9ABFAAAAAAAAAAAAAABBQEFAR8Y2LWkeK06R9fJ93tFYmZ3REaz5MDasecS3inh+WOkA6cfM7zupHhjrxs4r3m062mZnrM6vkAAAAB9UtNZiYnSY4TDUwMyrMR9prFucxGsT3ZID9FhY1LxrW0Tpx6w9H57ZsacO8Wj4x1jm/QROsaxwneCggKIAoigCAKAAAACAKigAA4M3xNKRWPzTv8o/2GS7s3t7dY6V19Zn+HCAAAAAAAAA3Mvv4sKnaPD6MNsZT+F/lb/wHaiygAAAAAAAAKAAigIoAAAxs2/Fj9kfWXG785r7dJ61mPSf7Z4AoCKAIKAgoCNvK4+6jvNp+bFbuXxpg08tfWQdCLKAqAAqAAAKIAoAAIAqKAADPzivsVnpbT1j+mS0c3xtbRSOFfanz5f73Z4AAAAAAAADf2KfusP9sMBp5RjbrYc8var5c4BpIqACoAKAgAKAAAAigIqKAADFzWPvfOtXI784r7dJ6109J/twAAAAAAAAAOvK/wAWP22cjuyiuuJM9K/WQa6KgKioAqKCAAoAAACKgCooAAOPNMLxYescaTr8ObGfpWft+yYcYdr1rpaNJ3cOPQGUAAAAAAAA2MqwZrSbTxvOv+PJ55dsdfDGJaNZnfETwiGiAioCoqAKiggAKAAAAACKigAAPHbI1wsSP+svZ84lda2jrEx8gfnAmJjdO6Y3T5gAAAACK+8HCm9orHP5RzkG9s8aUpHSlfo9EiNN3RQEVAVFQBUUEABQAAAEUBFAAAAHxjYkUra08IjXz7A4M22eNIxI3Trpbv3Zi3vNpmbTrM70AAAAAbGVYMRTx87a7+2vBjrW0xwmY8p0B+kHhseN9phxbnwt5w9wEVABUAUAQVABQAAAAAEBR54uLWka2tFfPi4cbNI4Urr3tuj0BpMnNNp8U/Z14Vn2u9ujnxdtxbcbTEdK7nOAqAKgAogAqAOvL9p+ztpPu23T2nlLb1fmXthbXiU3VtOkcp3x8wfoBl4Oaz+evxr/AA78HaKX920T24T6A9QAAAAAAAAfF8StY1tMRHedAfY4MXM6R7kTbv7sOHH2zEvxtpHSu6AauPtmHTjOs9K75Z+PmV7bq6Uj1s4QFtaZnWZmZ6zOsoAAAAAKIAAAogCoAKRKKDrwMwxK8fbjvx9Whgbfh33a+Gelt3zYgD9KMDA2rEw/dtOn6Z3w7sHNKz79ZjvG+AaI88LGpffW0T5cfR6AAA4Nu2/wTNKe9ztyr282Ve82nW0zM9Z3pMgCKAgoCCoAKAgoCCgIKgAoCCgIoAAgKIoETMTrEzExzjdLS2LMJ1iuJz3Rf+WagP02o/O/a3/Vb1lAfIAAACKgAAAAAAAAAAAAAACooAAAAAAAAAAAAAAAAIoAgoAigAAAAAAIoAAAAAAAAA//2Q==",
+      "id": 4
+    }
+  ],
+  "team": [
+    {
+      "teamName": "Design",
+      "description": "This is design Team",
+      "color": "#ff0000",
+      "timestamp": 1664283667926,
+      "id": 1
+    },
+    {
+      "teamName": "Tech",
+      "description": "This is teach team",
+      "color": "#00ff40",
+      "timestamp": 1664283791717,
+      "id": 2
+    },
+    {
+      "teamName": "Team ",
+      "description": "description here",
+      "color": "#59ff00",
+      "timestamp": 1699855609718,
+      "id": 3
+    }
+  ],
+  "teammembers": [
+    {
+      "teamId": 1,
+      "teamName": "Design",
+      "teamColor": "#ff0000",
+      "description": "This is design Team",
+      "teamCreationDate": 1664283667926,
+      "teamMemberEmail": "admin@gmail.com",
+      "id": 1
+    },
+    {
+      "teamId": 1,
+      "teamName": "Design",
+      "teamColor": "#ff0000",
+      "description": "This is design Team",
+      "teamCreationDate": 1664283667926,
+      "teamMemberEmail": "user@gmail.com",
+      "id": 2
+    },
+    {
+      "teamId": 2,
+      "teamName": "Tech",
+      "teamColor": "#00ff40",
+      "description": "This is teach team",
+      "teamCreationDate": 1664283791717,
+      "teamMemberEmail": "user@gmail.com",
+      "id": 3
+    },
+    {
+      "teamId": 3,
+      "teamName": "Team ",
+      "teamColor": "#59ff00",
+      "description": "description here",
+      "teamCreationDate": 1699855609718,
+      "teamMemberEmail": "admin@gmail.com",
+      "id": 4
+    }
+  ],
+  "projects": [
+    {
+      "teamId": 1,
+      "projectTitle": "Test",
+      "creator": {
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "avatar": "https://avatars.githubusercontent.com/u/72383649?v=4",
+        "id": 1
+      },
+      "teamColor": "#ff0000",
+      "teamName": "Design",
+      "projectStatus": "doing",
+      "timestamp": 1664015104908,
+      "id": 1
+    },
+    {
+      "teamId": 2,
+      "projectTitle": "Tech Project",
+      "creator": {
+        "email": "user@gmail.com",
+        "avatar": "https://scontent.fdac5-1.fna.fbcdn.net/v/t39.30808-6/299684131_1512367125865634_4824945952595178994_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5b7eaf&_nc_ohc=V3Eku-1OFeUAX-FPla1&tn=UuboEzHRJ1CyHg37&_nc_ht=scontent.fdac5-1.fna&oh=00_AT9y9CKeMLeyadK9D-qcUI6OthDHlAv18VR9IGnysDYMuw&oe=6337E3E0",
+        "name": "User",
+        "id": 2
+      },
+      "teamColor": "#00ff40",
+      "teamName": "Tech",
+      "projectStatus": "backlog",
+      "timestamp": 1664283818977,
+      "id": 2
+    },
+    {
+      "teamId": 1,
+      "projectTitle": "tete",
+      "creator": {
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "avatar": "https://avatars.githubusercontent.com/u/72383649?v=4",
+        "id": 1
+      },
+      "teamColor": "#ff0000",
+      "teamName": "Design",
+      "projectStatus": "backlog",
+      "timestamp": 1664015104908,
+      "id": 3
+    },
+    {
+      "teamId": 3,
+      "projectTitle": "new project",
+      "creator": {
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "avatar": "https://avatars.githubusercontent.com/u/72383649?v=4",
+        "id": 1
+      },
+      "teamColor": "#59ff00",
+      "teamName": "Team ",
+      "projectStatus": "done",
+      "timestamp": 1664015104908,
+      "id": 4
+    }
+  ]
+}
