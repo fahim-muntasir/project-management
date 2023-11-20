@@ -35,6 +35,37 @@ export default function ProjectItem({ projectData, memberTeams }) {
       ? projectData.projectTitle.toLowerCase().includes(search.toLowerCase())
       : false;
 
+  const teamMembers = [
+    {
+      id: 1,
+      name: "Remy Sharp",
+      avatarSrc: "https://avatars.githubusercontent.com/u/72383649?v=4",
+    },
+    {
+      id: 2,
+      name: "Travis Howard",
+      avatarSrc: "https://avatars.githubusercontent.com/u/72383649?v=4",
+    },
+    {
+      id: 3,
+      name: "Cindy Baker",
+      avatarSrc: "https://avatars.githubusercontent.com/u/72383649?v=4",
+    },
+    {
+      id: 4,
+      name: "Agnes Walker",
+      avatarSrc: "https://avatars.githubusercontent.com/u/72383649?v=4",
+    },
+    {
+      id: 5,
+      name: "Trevor Henderson",
+      avatarSrc: "https://avatars.githubusercontent.com/u/72383649?v=4",
+    },
+  ];
+
+  const visibleMembers = teamMembers.slice(0, 3); // Show only the first three members
+  const additionalMembersCount = teamMembers.length - visibleMembers.length;
+
   return (
     <>
       <div
@@ -50,40 +81,18 @@ export default function ProjectItem({ projectData, memberTeams }) {
           projectData?.creator?.email === user?.email && (
             <div>
               <button
-                onClick={actionOpenCloseHandlear}
-                className="absolute top-0 right-0 flex items-center justify-center hidden w-5 h-5 mt-3 mr-2 text-gray-200 rounded hover:bg-gray-200 hover:text-gray-700 group-hover:flex"
+                onClick={deleteHandler}
+                className="absolute top-0 right-2 flex items-center justify-center w-5 h-5 mt-3 mr-2 text-gray-200 rounded hover:bg-red-600 hover:bg-opacity-10"
               >
                 <svg
-                  className="w-4 h-4 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
+                  height="1em"
+                  viewBox="0 0 448 512"
+                  fill="#ef4444"
                 >
-                  <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                  <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
                 </svg>
               </button>
-              {isOpenAction && (
-                <div className="absolute bg-white right-5 shadow-md top-8">
-                  <ul>
-                    <li
-                      onClick={deleteHandler}
-                      className="hover:bg-gray-100 p-2 flex text-sm items-center"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        x="0px"
-                        y="0px"
-                        width="17"
-                        height="17"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M 10.806641 2 C 10.289641 2 9.7956875 2.2043125 9.4296875 2.5703125 L 9 3 L 4 3 A 1.0001 1.0001 0 1 0 4 5 L 20 5 A 1.0001 1.0001 0 1 0 20 3 L 15 3 L 14.570312 2.5703125 C 14.205312 2.2043125 13.710359 2 13.193359 2 L 10.806641 2 z M 4.3652344 7 L 5.8925781 20.263672 C 6.0245781 21.253672 6.877 22 7.875 22 L 16.123047 22 C 17.121047 22 17.974422 21.254859 18.107422 20.255859 L 19.634766 7 L 4.3652344 7 z"></path>
-                      </svg>
-                      Delete project
-                    </li>
-                  </ul>
-                </div>
-              )}
             </div>
           )}
         <span
@@ -94,7 +103,7 @@ export default function ProjectItem({ projectData, memberTeams }) {
         <h4 className="mt-3 text-sm font-medium text-gray-200 ">
           {projectData?.projectTitle}
         </h4>
-        <div className="flex items-center w-full mt-3 text-xs font-medium text-gray-400">
+        <div className="flex items-center  justify-between w-full mt-3 text-xs font-medium text-gray-400">
           <div className="flex items-center">
             <svg
               className="w-4 h-4 text-gray-300 fill-current"
@@ -113,11 +122,32 @@ export default function ProjectItem({ projectData, memberTeams }) {
             </span>
           </div>
 
-          <img
-            className="w-6 h-6 ml-auto rounded-full"
-            src={projectData?.creator?.avatar}
-            alt="creator"
-          />
+          {/* <div className="flex items-center space-x-[-0.5rem]">
+            <img
+              className="w-6 h-6 ml-auto rounded-full"
+              src={projectData?.creator?.avatar}
+              alt="creator"
+            />
+          </div> */}
+
+          <div className="flex items-center space-x-[-0.5rem]">
+            {additionalMembersCount > 0 && (
+              <div className="relative" style={{ left: "-0.2rem" }}>
+                <div className="w-6 h-6 rounded-full text-sky-500 bg-slate-700 border border-slate-700 flex items-center justify-center">
+                  {additionalMembersCount}+
+                </div>
+              </div>
+            )}
+            {visibleMembers.map((member) => (
+              <div key={member.id} className="relative">
+                <img
+                  className="w-6 h-6 rounded-full border border-slate-700"
+                  src={member.avatarSrc}
+                  alt={member.name}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

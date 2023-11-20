@@ -50,6 +50,13 @@
       "color": "#59ff00",
       "timestamp": 1699855609718,
       "id": 3
+    },
+    {
+      "teamName": "Development",
+      "description": "This is development team",
+      "color": "#ffea00",
+      "timestamp": 1700069804244,
+      "id": 4
     }
   ],
   "teammembers": [
@@ -88,6 +95,24 @@
       "teamCreationDate": 1699855609718,
       "teamMemberEmail": "admin@gmail.com",
       "id": 4
+    },
+    {
+      "teamId": 4,
+      "teamName": "Development",
+      "teamColor": "#ffea00",
+      "description": "This is development team",
+      "teamCreationDate": 1700069804244,
+      "teamMemberEmail": "admin@gmail.com",
+      "id": 5
+    },
+    {
+      "teamId": 4,
+      "teamName": "Development",
+      "teamColor": "#ffea00",
+      "description": "This is development team",
+      "teamCreationDate": 1700069804244,
+      "teamMemberEmail": "user@gmail.com",
+      "id": 6
     }
   ],
   "projects": [
@@ -102,7 +127,7 @@
       },
       "teamColor": "#ff0000",
       "teamName": "Design",
-      "projectStatus": "doing",
+      "projectStatus": "backlog",
       "timestamp": 1664015104908,
       "id": 1
     },
@@ -147,7 +172,7 @@
       },
       "teamColor": "#59ff00",
       "teamName": "Team ",
-      "projectStatus": "done",
+      "projectStatus": "backlog",
       "timestamp": 1664015104908,
       "id": 4
     }
